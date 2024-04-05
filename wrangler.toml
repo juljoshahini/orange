@@ -1,18 +1,19 @@
 name = "orange-meets"
 # https://developers.cloudflare.com/workers/platform/compatibility-dates
 compatibility_date = "2022-04-05"
-account_id = "a67e14daa5f8dceeb91fe5449ba496eb"
+account_id = "16f4ff399775a540116f556fa200699a"
 main = "./build/index.js"
 
 [site]
   bucket = "./public"
 
-[[build.upload.rules]]
-  type = "ESModule"
-  globs = ["**/*.js"]
+ [[rules]]
+      type = "ESModule"
+      globs = [ "**/*.js" ]
 
 [vars]
-CALLS_APP_ID = "f0ea263009299383d09d44b9fad5316c"
+CALLS_APP_ID="a6c7a1ac431aa001f1498982a133855a"
+CALLS_APP_SECRET="aee50524c0b90d9c70e76de8024d80c0095fa4b0bbf4a5a28acb9c2e45b72674"
 
 [durable_objects]
  bindings = [
